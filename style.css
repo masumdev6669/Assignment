@@ -1,3 +1,99 @@
-h1{
-    color: red;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    margin: 20px;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1700px;
+    margin: 0 auto;
+
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li{
+    display: flex;
+    list-style: none;
+
+}
+
+nav ul li a{
+text-decoration: none;
+color: #575757;
+padding-left: 13px;
+font-size: 13px;
+transition: 0.5s;
+}
+nav ul li a:hover{
+    color: black;
+    font-weight: bold;
+}
+
+.main-button{
+    background-color: #0162ff;
+    color: white;
+    padding: 11px 26px;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.main-button:hover{
+    background-color: blue;
+}
+
+.section-parent img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    box-shadow: 3px 3px 5px;
+}
+.section-child{
+    position: relative;
+}
+.section-child h1{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    font-size: 60px;
+}
+.section-child p{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    /* font-size: 60px; */
+}
+.section-child .second-button{
+    background-color: #0162ff;
+    color: white;
+    padding: 11px 26px;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+    border-radius: 8px;
+    transition: 0.5s;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    margin-top: 410px;
+}
+.section-child .second-button:hover{
+         background-color: blue;
+
 }
