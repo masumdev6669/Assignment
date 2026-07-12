@@ -92,7 +92,7 @@ nav ul li a:hover{
     margin: 0 auto;
     display:flex;
     align-items: center;
-    margin-top: 410px;
+    margin-top: 360px;
 }
 .section-child .second-button:hover{
          background-color: blue;
@@ -106,10 +106,7 @@ nav ul li a:hover{
     margin-top: 40px;
 }
 .gallery-section{
-    /* display: flex; */
-    /* align-items: center;
-    justify-content: center;
-    margin-bottom: 30px; */
+   
     margin-top: 30px !important;
     max-width: 1200px;
     display: grid;
@@ -120,14 +117,7 @@ nav ul li a:hover{
     margin: 0 auto;
 }
 .card{
-    /* width: 400px;
-    height: 300px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    border: 0.1px solid rgb(234, 232, 232); */
+   
     width: 530px;
     height: 400px;
     background-color: #ffffff;
@@ -136,12 +126,11 @@ nav ul li a:hover{
     flex-direction: column;
     gap: 12px;
     border: 0.1px solid rgb(234, 232, 232);
+    transition: 0.5s;
 }
+
+
 .card img{
-    /* width: 100%;
-    height: 200px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px; */
     width: 100%;
     height: 300px;
     border-top-left-radius: 8px;
@@ -168,32 +157,163 @@ nav ul li a:hover{
   margin-left: 8px;
 
 }
-.pricing{
-         margin-top: 40px;
-}
-.pricing h2{
-     color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
 
+/* Pricing Card Start */
+
+.pricing-section{
+         margin-top: 80px;
 }
-.pricing p{
-    color: #575757;
+.pricing-section h1,p{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
+   
 }
- .pricing-card{
+.pricing-section h1{
+    font-size: 40px;
+}
+.pricing-section p{
+    color: #575757;
+    font-size: 14px;
+}
+
+/* For first and third pricing card */
+.price-col{
          width: 300px;
-         height: 400px;
+         height: 340px;
          background-color: #ffffff;
          border-radius: 8px;
-         display: flex;
-         flex-direction: column;
-         gap: 12px;
+     
          border: 0.1px solid rgb(234, 232, 232);
+         
+         margin-bottom: 30px;
+}
+.price-col h6{
+    color: #575757;
+    
+}
+.price-col h2{
+    font-size: 40px;
+    padding: 6px 0px;
+   
+}
 
- }
+/* For second Pricing card  */
+.price-col-2{
+         width: 300px;
+         height: 340px;
+         background-color: #0D1B2A;
+         border-radius: 8px;
+       
+         border: 0.1px solid rgb(234, 232, 232);
+         
+         margin-bottom: 30px;
+}
+.price-col-2 h2,h6{
+    color: #ffffff;
+    
+    
+}
+.price-col-2 h5{
+    color: #93C5FD;
+}
+.price-col-2 h2{
+    font-size: 40px;
+    padding: 6px 0px;
+   
+}
+.price-text{
+    padding: 20px;
+}
+.line{
+    width: 80%;
+    height: 1px;
+    background-color: #dfe2e8;
+    margin: 0 auto;
+}
 
+.price-row{
+    max-width: 940px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 30px auto;
+
+   
+
+}
+/* For first pricing card--Start */
+
+.list-1 ul{
+       padding-left: 30px;
+       padding-top: 10px;
+}
+.list-1 ul li{
+    font-size: 13px;
+    color: #575757;
+    padding-top: 7px;
+}
+.list-1 li::marker{
+    color: #0162ff;
+}
+
+.btn-1{
+    color: #0162ff;
+    border: 1px solid #0162ff;
+    border-radius: 5px;
+    padding: 8px 60px;
+    margin: 15px 40px;
+    font-weight: bold;
+}
+/* For first pricing card--End */
+
+/* For second pricing card--Start */
+
+.list-2 ul{
+       padding-left: 30px;
+       padding-top: 10px;
+}
+.list-2 ul li{
+    font-size: 13px;
+    color: #eee9e9;
+    padding-top: 7px;
+}
+.list-2 li::marker{
+    color: #0162ff;
+}
+
+.btn-2{
+    background-color: #0162ff;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 80px;
+    margin: 15px 40px;
+    font-weight: bold;
+    border: none;
+}
+
+/* For Second pricing card--End */
+
+/* For third pricing card--End */
+
+.list-3 ul{
+       padding-left: 30px;
+       padding-top: 10px;
+}
+.list-3 ul li{
+    font-size: 13px;
+    color: #575757;
+    padding-top: 7px;
+}
+.list-3 li::marker{
+    color: #0162ff;
+}
+
+.btn-3{
+    color: #000000;
+    border: 1px solid #575757;
+    border-radius: 5px;
+    padding: 8px 70px;
+    margin: 15px 40px;
+    font-weight: bold;
+}
