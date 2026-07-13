@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+/* Navbar start */
+
+
 header{
     margin: 20px;
 }
@@ -52,34 +56,88 @@ nav ul li a:hover{
     background-color: blue;
 }
 
+/* Navbar end */
+
+/* Background image */
+
+.section-parent{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
 .section-parent img{
     width: 100%;
     height: 80vh;
     object-fit: cover;
     object-position: center;
     position: absolute;
-    box-shadow: 3px 3px 5px;
+    top: 0;
+    left: 0;
 }
+
+.section-parent::after{
+    content: "";
+    position: absolute;
+    left: -120px;
+    bottom: -120px;
+    width: 900px;
+    height: 800px;
+    background: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0.95) 0%,
+        rgba(0, 0, 0, 0.7) 35%,
+        rgba(0, 0, 0, 0.35) 60%,
+        transparent 100%
+    );
+    pointer-events: none;
+    z-index: 1;
+}
+
 .section-child{
     position: relative;
+    z-index: 2;
     height: 80vh;
 }
+
 .section-child h1{
     color: white;
     display: flex;
-    align-items: center;
     justify-content: center;
     padding-top: 80px;
     font-size: 60px;
 }
+
 .section-child p{
     color: white;
     display: flex;
-    align-items: center;
     justify-content: center;
     padding-top: 15px;
-    /* font-size: 60px; */
+    text-align: center;
+    line-height: 28px;
 }
+
+.section-child .second-button{
+    background-color: #0162ff;
+    color: white;
+    padding: 11px 26px;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+    border-radius: 8px;
+    transition: .4s;
+    margin: 360px auto 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.section-child .second-button:hover{
+    background-color: blue;
+}
+
+
 .section-child .second-button{
     background-color: #0162ff;
     color: white;
@@ -97,8 +155,17 @@ nav ul li a:hover{
 .section-child .second-button:hover{
          background-color: blue;
 
+} */
+
+/* Gallery section start */
+
+h4{
+    text-align: center;
+    margin: 0 auto;
 }
-.h-section h1{
+
+
+.h-section{
     color: black;
     display: flex;
     align-items: center;
@@ -137,48 +204,48 @@ nav ul li a:hover{
     border-top-right-radius: 8px;
 }
 
-.text p{
+.gallery-section .text p{
     color: #0162ff;
     font-size: 12px;
     font-weight: bold;
     padding-top: 8px;
-    margin-left: 8px;
+    margin-left: 14px;
 }
-.text h3{
-        padding-top: 8px;
-        margin-left: 8px;
-
+.gallery-section .text h3{
+  margin-left: 14px;
+  padding-top: 5px;
 }
-.text h6{
+.gallery-section .text h6{
   color:#575757 ;
   font-weight: normal;
   font-size: 12px;
-  padding-top: 8px;
-  margin-left: 8px;
-
+  margin-left: 14px;
+  padding-top: 5px;
 }
 
-/* Pricing Card Start */
+/* Gallery section end */
 
-.pricing-section{
-         margin-top: 80px;
-}
-.pricing-section h1,p{
+ /* Pricing section start */
+
+.text-center{
+    margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-   
+    flex-direction: column;
 }
-.pricing-section h1{
-    font-size: 40px;
-}
-.pricing-section p{
+.text-center p{
     color: #575757;
     font-size: 14px;
+    padding-top: 5px;
+
 }
 
-/* For first and third pricing card */
+
+.pricing-section{
+         margin-top: 50px;
+}
+
 .price-col{
          width: 300px;
          height: 340px;
@@ -317,3 +384,127 @@ nav ul li a:hover{
     margin: 15px 40px;
     font-weight: bold;
 }
+
+/* Pricing section end */
+
+/* AI section start */
+
+.why-attend{
+    width: 100%;
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.container{
+    width: 1180px;
+    margin: auto;
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2{
+    font-size: 42px;
+    color: #111827;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.section-title p{
+    width: 650px;
+    margin: auto;
+    color: #6b7280;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.attend-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.attend-card{
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 35px 30px;
+    transition: .3s;
+}
+
+.attend-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.08);
+    border-color: #2563eb;
+}
+
+.icon{
+    width: 65px;
+    height: 65px;
+    background: #2563eb;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.attend-card h3{
+    font-size: 22px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.attend-card p{
+    color: #6b7280;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+/* AI section end */
+
+/* Footer section start */
+
+.footer{
+    background-color: #0D1B2A;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 30px;
+    position: absolute;
+}
+.footer-text{
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 40px;
+    
+}
+.text-left{
+    color: white;
+    opacity: 50%;
+    font-size: 14px;
+    padding-left: 90px;
+    align-items: center;
+}
+.text-right{
+    padding-right: 90px;
+}
+.text-right ul{
+         list-style: none;
+         display: flex;
+
+}
+.text-right ul a{
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+    opacity: 50%;
+    font-size: 14px;
+}
+
+/* Footer section end */
